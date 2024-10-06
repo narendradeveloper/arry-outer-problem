@@ -1,0 +1,33 @@
+arr=prompt("Enter the pair of number:").split(" ").map(Number)
+res=[]
+for(i=0;i<arr.length;i++){
+    num=arr[i]
+    res[num]=(res[num]||0)+1
+}
+count=0
+for(str of Object.values(res)){
+    if(str>1)
+    count+=Math.floor(str/2)
+}
+
+console.log(count)
+  input:Enter the pair of number: 10 20 10 30 20 20
+
+   out put:2
+
+arr=prompt("Enter the pair of number:").split(" ").map(Number)
+res=[]
+for(i=0;i<arr.length;i++){
+    num=arr[i]
+    res[num]=(res[num]||0)+1
+}
+count=0
+for(str of Object.values(res)){
+    if(str>1)
+    count+=Math.floor(str/2)
+}
+
+console.log("pairs:"+count)
+
+    input:Enter the pair of number: 30 50 30 50 20 50 50 20 50 50 50
+  out put:  pairs:5
